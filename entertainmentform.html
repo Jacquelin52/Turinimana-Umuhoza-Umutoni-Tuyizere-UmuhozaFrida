@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entertainment Form</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container{
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            width: 400px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+
+        h2{
+            text-align: center;
+            color: #333;
+        }
+
+        label{
+            font-weight: bold;
+        }
+
+        input, select, textarea{
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .checkbox-group{
+            margin-bottom: 15px;
+        }
+
+        button{
+            width: 100%;
+            padding: 12px;
+            background: #ff6600;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background: #e65c00;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Entertainment -Form</h2>
+
+    <form>
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="Enter your name">
+
+        <label for="movie">Favorite Movie</label>
+        <input type="text" id="movie" placeholder="Enter favorite movie">
+
+        <label for="music">Favorite Music Genre</label>
+        <select id="music">
+            <option>Pop</option>
+            <option>Rock</option>
+            <option>Hip Hop</option>
+            <option>Jazz</option>
+            <option>Classical</option>
+        </select>
+
+        <label>Entertainment Activities</label>
+        <div class="checkbox-group">
+            <input type="checkbox"> Watching Movies <br>
+            <input type="checkbox"> Playing Games <br>
+            <input type="checkbox"> Listening to Music <br>
+            <input type="checkbox"> Traveling
+        </div>
+
+        <label for="game">Favorite Game</label>
+        <input type="text" id="game" placeholder="Enter favorite game">
+
+        <label for="comments">Comments</label>
+        <textarea id="comments" rows="4" placeholder="Write something..."></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>
